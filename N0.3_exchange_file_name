@@ -1,0 +1,19 @@
+import os
+
+path = r'H:\我的文档\经济学'
+topath = r'I:\study'
+# 获取该目录下所有文件，存入列表中
+fileList = os.listdir(path)
+
+n = 0
+for i in fileList:
+    #print(i[0:-4])
+    # 设置旧文件名（就是路径+文件名） I:\123456
+    oldname = topath + os.sep + str(n + 1)
+
+    # 设置新文件名
+    newname = 'I:\\study\\' + (fileList[n])[0:-4]  # os.sep添加系统分隔
+    print(oldname, '\t', newname)
+    os.rename(oldname, newname)  # 用os模块中的rename方法对文件改名
+    
+    n += 1
