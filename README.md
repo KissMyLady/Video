@@ -15,17 +15,11 @@
     * 可以用OOP更进一步升级代码，欢迎前来讨论, QQ(群:36877 9008)
     * 可进一步优化升级方案， 例如，在视频截图时，计算型操作更频繁， 在图片合并时，IO操作更频繁，  
        可针对这个特性进行优化升级
-## :computer: 效果预览  
-视频 》》 截图   
-![]()    
-截图 》》 字幕裁剪  
-![]()  
-字幕裁剪 》》 长图拼接  
-![]()  
-
+## :computer: 以 下     
 ## 代码块一  
+### 效果预览  
 * 视频 》》 截图  
-![最终效果]()  
+![1-1](https://github.com/KissMyLady/Exchaneg-video-to-photo/blob/master/Img/video-1-2.jpg)    
 ```Python 
 # !/usr/bin/python
 # !coding:utf-8
@@ -79,8 +73,9 @@ if __name__ == '__main__':
 ```
 
 ## 代码块二  
-* 截图 》》 字幕裁剪
-![]()  
+### 效果预览 
+截图 》》 字幕裁剪  
+![1-2](https://github.com/KissMyLady/Exchaneg-video-to-photo/blob/master/Img/viedo1-3.jpg)  
 ```Python
 import cv2, os
 from multiprocessing import Pool
@@ -141,8 +136,10 @@ if __name__ == '__main__':
 
 
 ```
-## 代码块三  
-* 字幕裁剪 》》 长图拼接  
+## 代码块三
+### 效果预览  
+字幕裁剪 》》 长图拼接  
+![1-3](https://github.com/KissMyLady/Exchaneg-video-to-photo/blob/master/Img/video-1-4.jpg)  
 ```Python
 import PIL.Image as Image
 import os, cv2
@@ -218,8 +215,6 @@ if __name__ == '__main__':
     pool = Pool(8)
     pool.map(main, [file_new for file_new in path_list])
 ```
-
-
 
 
 
